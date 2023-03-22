@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Fetch</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Javascript Fetch</h1>
+    </header>
+    <main>
+      <p>Click the button to retrieve a random quote:</p>
+      <button onclick="getRandomQuote()">Get Quote</button>
+      <p id="quote"></p>
+    </main>
+    <script>
+      function getRandomQuote() {
+        fetch('https://api.quotable.io/random')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('quote').textContent = `"${data.content}" - ${data.author}`;
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }
+    </script>
+  </body>
+</html>
