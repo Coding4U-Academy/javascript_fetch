@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  button:hover {
+    background-color: #3e8e41;
+  }
+  #quote {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
