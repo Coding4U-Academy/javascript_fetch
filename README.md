@@ -1,4 +1,4 @@
-#Using fetch() in JavaScript 
+# Using fetch() in JavaScript 
 
 The fetch() method is used to make network requests to retrieve resources from a server or an API. It returns a Promise that resolves to the Response object representing the response to the request.
 
@@ -51,11 +51,11 @@ In addition to the basic fetch() method, there are other methods and classes in 
 
 ## Fetch Demo - fetch.html 
 
-###getRandomQuote()
+### getRandomQuote()
 
 This function retrieves a random quote from the Quotable API and updates the text content of an HTML element with the ID "quote" to display the quote and its author.
 
-####Implementation
+#### Implementation
 ```
 function getRandomQuote() {
   fetch('https://api.quotable.io/random')
